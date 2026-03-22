@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Nike Air Zoom — Tênis de corrida com tecnologia Air Zoom para máximo conforto e desempenho.">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <title>Nike Air Zoom</title>
+</head>
+
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <div class="header-left"></div>
+
+    <!-- Logo centralizada na divisória das duas cores -->
+    <img src="img/logo.webp" class="logo" alt="Nike Logo">
+
+    <nav>
+      <a href="#" class="nav-link">Lançamentos</a>
+      <a href="#" class="nav-link">Masculino</a>
+      <a href="#" class="nav-link">Feminino</a>
+      <a href="#" class="nav-link">Kids</a>
+    </nav>
+  </header>
+
+  <!-- Texto decorativo de fundo -->
+  <div class="bg-text" aria-hidden="true">Nike</div>
+
+  <!-- Plano diagonal escuro -->
+  <div class="diagonal-shape"></div>
+
+  <!-- CONTEÚDO PRINCIPAL -->
+  <main class="caixa-principal">
+
+    <!-- Lado esquerdo: texto -->
+    <div class="caixa-texto">
+      <span class="tag-novo">NOVO</span>
+
+      <h4 id="preco">R$ 799,00</h4>
+
+      <h1 id="nome-tenis">Nike Air<br>Zoom</h1>
+
+      <!-- Descrição corrigida: estrutura semântica com destaque inline -->
+      <p id="descricao-tenis">
+        Uma passada elástica para qualquer corrida.
+        A sensação familiar e perfeita do <strong>Pegasus</strong> retorna
+        para ajudá-lo a atingir seus objetivos com
+        <strong>máxima responsividade</strong> e suporte neutro.
+      </p>
+
+      <!-- Botão Carrinho -->
+      <button class="botao-carrinho" id="btn-carrinho" aria-label="Adicionar Nike Air Zoom ao carrinho">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+             stroke="currentColor" stroke-width="2"
+             stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+          <circle cx="9" cy="21" r="1"></circle>
+          <circle cx="20" cy="21" r="1"></circle>
+          <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"></path>
+        </svg>
+        Adicionar ao Carrinho
+      </button>
+    </div>
+    <!-- /caixa-texto -->
+
+    <!-- Lado direito: imagem do tênis -->
+    <div class="caixa-imagem">
+      <div class="shoe-glow"></div>
+      <img src="img/nike1.webp" class="imagem-tenis" id="imagem-tenis" alt="Nike Air Zoom Verde">
+    </div>
+    <!-- /caixa-imagem -->
+
+  </main>
+  <!-- /caixa-principal -->
+
+  <!-- SELETOR DE COR (lateral) -->
+  <aside class="caixa-botoes" id="color-selector" aria-label="Selecionar cor">
+
+    <!-- Trilho do indicador deslizante -->
+    <div class="slider-track" aria-hidden="true">
+      <div class="slider-indicator" id="slider-indicator"></div>
+    </div>
+
+    <button class="botao-cor active"
+            data-color="verde"
+            data-bg="#ccee66"
+            data-dark="#202020"
+            data-btn="#a3be52"
+            data-img="img/nike1.webp"
+            aria-label="Cor Verde"
+            title="Verde">
+      <span class="cor-preview" style="background:#ccee66;"></span>
+      <span class="cor-nome">Verde</span>
+    </button>
+
+    <button class="botao-cor"
+            data-color="azul"
+            data-bg="#58cced"
+            data-dark="#1a2a40"
+            data-btn="#3ba8d4"
+            data-img="img/nike2.webp"
+            aria-label="Cor Azul"
+            title="Azul">
+      <span class="cor-preview" style="background:#58cced;"></span>
+      <span class="cor-nome">Azul</span>
+    </button>
+
+    <button class="botao-cor"
+            data-color="rosa"
+            data-bg="#ff9eb5"
+            data-dark="#3a1a25"
+            data-btn="#e8829a"
+            data-img="img/nike3.webp"
+            aria-label="Cor Rosa"
+            title="Rosa">
+      <span class="cor-preview" style="background:#ff9eb5;"></span>
+      <span class="cor-nome">Rosa</span>
+    </button>
+
+  </aside>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
